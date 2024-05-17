@@ -7,75 +7,128 @@
   <meta name="author" content="Neto Russo">
   <title>Neto Russo || Fotografias </title>
 
-  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="CSS/style.css" />
 
 </head>
 
 <body>
-  <!-- <header>
-    
-    <div>
+  <header class="cabecalho">
 
-      <p>Neto Russo</p>
+    <div class="cabecalhoConteudo">
 
-      <nav>
-        <ul>
-          <li><a href="">Sobre</a></li>
-          <li><a href="">Contatos</a></li>
+      <a class="linkLogo" href="../index.html">
+        <p class="cabecalhoLogo">Neto Russo</p>
+      </a>
+
+      <nav class="cabecalhoMenu">
+        <ul class="cabecalhoMenuLinks">
+          <li class="cabecalhoMenuLinksLink"><a href="./Paginas/about.html">Sobre</a></li>
+          <li class="cabecalhoMenuLinksLink"><a href="./Paginas/contatos.html">Contatos</a></li>
         </ul>
       </nav>
 
     </div>
 
-  </header> -->
+  </header>
+
   <main>
-    <section>
-      <div class="slider">
-        <div class="slides">
-          <!-- Radios Buttons -->
-          <input type="radio" name="radio-btn" id="radio1">
-          <input type="radio" name="radio-btn" id="radio2">
-          <input type="radio" name="radio-btn" id="radio3">
-          <input type="radio" name="radio-btn" id="radio4">
-          <!-- Fim do radios buttons -->
+    <div class="degrade" > </div>
 
-          <!-- Slide image -->
-          <div class="slide1">
-            <img src="SRC/assets/imagens/NovaZelandia.jpg" alt="Foto de Nova zelandia">
+    <section class="ajuste">
+
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="SRC/assets/carrossel/NovaZelandia.jpg" alt="Foto de Nova zelandia">
           </div>
 
-          <div class="slide2">
-            <img src="SRC/assets/imagens/Egito.jpg" alt="Foto do Egito">
+          <div class="swiper-slide">
+            <img src="SRC/assets/carrossel/Egito.jpg" alt="Foto do Egito">
           </div>
 
-          <div class="slide3">
-            <img src="SRC/assets/imagens/Japao.jpg" alt="Foto do Japão">
+          <div class="swiper-slide">
+            <img src="SRC/assets/carrossel/Japao.jpg" alt="Foto do Japão">
           </div>
 
-          <div class="slide4">
-            <img src="SRC/assets/imagens/Canada.jpg" alt="Foto do Canadá">
+          <div class="swiper-slide">
+            <img src="SRC/assets/carrossel/Canada.jpg" alt="Foto do Canadá">
           </div>
-          <!-- Fim Slide image -->
 
-          <!-- Navegation auto -->
-          <div class="navigation-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
-            <div class="auto-btn4"></div>
+          <div class="swiper-slide">
+            <img src="SRC/assets/carrossel/Australia.jpg" alt="Foto do Australia">
           </div>
+
+          <div class="swiper-slide">
+            <img src="SRC/assets/carrossel/Brasil.jpg" alt="Foto do Brasil">
+          </div>
+
+          <div class="swiper-slide">
+            <img src="SRC/assets/carrossel/grecia.jpg" alt="Foto do Grecia">
+          </div>
+
+          <div class="swiper-slide">
+            <img src="SRC/assets/carrossel/Portugal.jpg" alt="Foto do Portugal">
+          </div>
+
+          <div class="swiper-slide">
+            <img src="SRC/assets/carrossel/Italia.jpg" alt="Foto do Italia">
+          </div>
+
+          <div class="swiper-slide">
+            <img src="SRC/assets/carrossel/RepublicaTcheca.jpg" alt="Foto da Republica Tcheca">
+          </div>
+
+
 
         </div>
-        <di class="manual-navegation">
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
-          <label for="radio3" class="manual-btn"></label>
-          <label for="radio4" class="manual-btn"></label>
-        </di>
+        <!-- If we need pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
       </div>
+
     </section>
   </main>
 
+  <footer class="rodaPe">
+    <div class="rodaPeConteudo">
+      <div class="redesSociais">
+
+        <a href="https://www.instagram.com/neto.russo/" target="_blank" title="instagram || @Neto.Russo" >
+          <img src="./SRC/assets/imagens/insta.png" alt="Logo do instagram" class="icon redeInsta">
+        </a>
+
+        <a href="https://www.linkedin.com/in/neto-russo/" target="_blank" title="linkedin || Neto Russo" >
+          <img src="./SRC/assets/imagens/linkedin.png" alt="Logo do linkedin" class="icon redeLinkedin">
+        </a>
+
+        <a href="https://www.donutstech.com.br/" target="_blank" title="Donuts Tech || O Marketing que da agua..." >
+          <img src="./SRC/assets/imagens/site.png" alt="Logo do linkedin" class="icon redeSite">
+        </a>
+
+      </div>
+      <div class="mouse">
+        <img src="./SRC/assets/imagens/mouse.png" alt="desenho de um mouse" class="mouseIcon">
+      </div>
+      <div class="copy">
+        <p class="assinatura">
+          Criado, pensado e desenvolvido por &copy; Neto Russo. 
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="JS/main.js"></script>
 </body>
 
